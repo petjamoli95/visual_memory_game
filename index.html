@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column align-items-center text-center">
+        <div id="title" class="title mt-5 mb-4">
+            <h1>Visual Memory Game</h1>
+            <p class="instructions" id="instructions">Every level, a number of squares will flash white. Memorise and pick them!<br>
+                Levels get progressively more difficult, increasing the number of squares.<br>
+                You have a total of 3 lives. If you get 3 squares incorrect, you lose 1 life and the level resets.<br>
+                Good luck!</p>
+        </div>
+        <div id="memory-game" class="memory-game">
+            <div class="info">
+                <div class="level">Level <span id="level">1</span></div>
+                <div class="lives">Lives <span id="lives">3</span></div>
+            </div>
+            <div id="squares" class="squares">  
+                <div id="row-1" class="row">
+                    <div id="1" class="square col"></div>
+                    <div id="2" class="square col"></div>
+                    <div id="3" class="square col"></div>
+                </div>
+                <div id="row-2" class="row">
+                    <div id="4" class="square col"></div>
+                    <div id="5" class="square col"></div>
+                    <div id="6" class="square col"></div>
+                </div>
+                <div id="row-3" class="row">
+                    <div id="7" class="square col"></div>
+                    <div id="8" class="square col"></div>
+                    <div id="9" class="square col"></div>
+                </div>
+            </div>
+        </div>
+        <div class="start-game mt-2">
+            <button id="start-button" class="btn btn-light start-button">Start Game</button>
+        </div>
+        <div id="game-over" class="game-over hidden">
+            <div class="score">
+                <h1 class="level">Level <span id="level-reached">1</span></h1>
+            </div>
+            <div id="try-again" class="try-again mt-2">
+                <button id="try-again-button" class="btn btn-light try-again-button">Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

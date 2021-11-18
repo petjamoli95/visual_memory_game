@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.container-fluid {
+    background: rgb(100,0,255);
+    background: linear-gradient(180deg, rgba(100,0,255,1) 0%, rgba(125,60,255,1) 50%, rgba(100,0,255,1) 100%);
+    height: 100vh;
+}
+
+.title h1, p,
+.info .level, .lives  {
+    color: #fff;
+}
+
+.level, .lives {
+    font-size: 2em;
+}
+
+.square {
+    background-color: rgb(100,0,255);
+    width: 128px;
+    height: 128px;
+    border-radius: 16px;
+    border: 3px solid #fff;
+    margin: 8px;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s ease opacity, 0.5s ease visibility;
+    -o-transition: 0.5s ease opacity, 0.5s ease visibility;
+    transition: 0.5s ease opacity, 0.5s ease visibility;
+}
+
+.btn {
+    background-color: #fff;
+}
+
+.light-input {
+    background-color: #336AFF;
+    border: 3px solid #fff;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+}
+
+.light-pattern {
+    background-color: #fff;
+    border: 3px solid #fff;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.correct {
+    background-color: #2B9348;
+    border: 3px solid #fff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.incorrect {
+    background-color: #D90429;
+    border: 3px solid #fff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.four {
+    width: 120px;
+    height: 120px;
+}
+
+.five {
+    width: 104px;
+    height: 104px;
+    margin: 6px;
+}
+
+.six {
+    width: 88px;
+    height: 88px;
+    margin: 6px;
+}
+
+.seven {
+    width: 72px;
+    height: 72px;
+    margin: 4px;
+}
+
+.eight {
+    width: 56px;
+    height: 56px;
+    margin: 4px;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    -webkit-transition: 0.5s ease opacity, 0.5s ease visibility;
+    -o-transition: 0.5s ease opacity, 0.5s ease visibility;
+    transition: 0.5s ease opacity, 0.5s ease visibility;
+}
