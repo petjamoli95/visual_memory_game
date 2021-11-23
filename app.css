@@ -6,7 +6,7 @@
 }
 
 .container-fluid {
-    background: rgb(32,32,32);
+    background: rgb(16,16,16);
     height: 100vh;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .square {
-    background-color: rgb(64,64,64);
+    background-color: rgb(16,16,16);
     width: 128px;
     height: 128px;
     border-radius: 16px;
